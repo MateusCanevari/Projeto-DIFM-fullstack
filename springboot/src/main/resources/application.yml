@@ -1,0 +1,46 @@
+authorizeHttpRequests:
+  permitAll: /auth/login,/auth/register,/swagger-ui/**,/v3/api-docs/**,/auth/emailVerification,/auth/resendEmailVerification
+  authenticated: /api/**,/auth/refresh/**
+  denyAll: /users
+  adminsOnly: /admin/**
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080,http://127.0.0.1:5500
+security:
+  jwt:
+    token:
+      secret-key: secret
+      expire-length: 3600000
+spring:
+  mysql:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://localhost:3307/projetodifm?useTimezone=true&serverTimezone=UTC&useSSL=true
+      username: root
+      password: admin
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: email
+    password: password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+support:
+  mail: email
+springdoc:
+  pathsToMatch:
+    - /auth/**
+    - /api/**/v1/**
+    - /admin/**
+  swagger-ui:
+    use-root-path: true

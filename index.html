@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/list-products.css">
+	<script type="module" src="/js/get-products.js" defer></script>
+	<title>Lista de Produtos</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Lista de Produtos</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Produto</th>
+					<th>Descrição</th>
+					<th>Quantidade</th>
+					<th>Preço</th>
+				</tr>
+			</thead>
+			<br>
+			<tbody id="produtos">
+
+			</tbody>
+
+			<!-- <div id="produtos">
+				<td><button class="btn-editar">Editar</button>
+
+					<button class="btn-excluir">Excluir</button>
+
+				</td>
+			</div> -->
+
+		</table>
+	</div>
+	<div class="add-button">
+		<button><a href="/add-produto.html">Adicionar Produto</a></button>
+	</div>
+	<div class="edit-button">
+		<button><a href="/edit-produto.html">Editar Produto</a></button>
+	</div>
+	<div class="remove-button">
+		<button><a href="/deletar-produto.html">Excluir Produto</a></button>
+	</div>
+	</div>
+</body>
+
+</html>

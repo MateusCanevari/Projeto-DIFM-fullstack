@@ -1,0 +1,217 @@
+.box-sizing {
+	box-sizing: border-box;
+  }
+  
+  body {
+	background-image: url("/img/listaprodutos.svg");
+	background-repeat: repeat;
+	background-size: 50%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	color: #000;
+	background-color: #21a3a3;
+  }
+  
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  h1 {
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
+  table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	background-color: #c3c3c3;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 10px;
+  }
+  
+  table th,
+  table td {
+	padding: 10px;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #eee;
+	border-radius: 4px;
+  }
+  
+  table th {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+  
+  table td {
+	font-size: 14px;
+  }
+  
+  .add-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+	padding: 8px 0px;
+  }
+  
+  .add-button button {
+    width: 10%;
+    height: 30%;
+    border: none;
+    outline: none;
+    background-color: #509150;
+    padding: 6px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	align-items: center;
+	margin-left: 850px;
+  }
+  
+  .add-button button:hover {
+    background-color: #509150;
+  }
+  
+  .add-button button a {
+    text-decoration: none;
+    font-weight: 1000;
+    color: #000;
+  }
+
+  .edit-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+	padding: 8px 0px;
+  }
+  
+  .edit-button button {
+    width: 10%;
+    height: 30%;
+    border: none;
+    outline: none;
+    background-color: #509150;
+    padding: 16px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	align-items: center;
+	margin-left: 850px;
+  }
+  
+  .edit-button button:hover {
+    background-color: #509150;
+  }
+  
+  .edit-button button a {
+    text-decoration: none;
+    font-weight: 1000;
+    color: #000;
+  }
+
+  .remove-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+	padding: 8px 0px;
+  }
+  
+  .remove-button button {
+    width: 10%;
+    height: 30%;
+    border: none;
+    outline: none;
+    background-color: #509150;
+    padding: 16px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	align-items: center;
+	margin-left: 850px;
+  }
+  
+  .remove-button button:hover {
+    background-color: #509150;
+  }
+  
+  .remove-button button a {
+    text-decoration: none;
+    font-weight: 1000;
+    color: #000;
+  }
+  
+  .lista-produtos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .lista-produtos > div {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 20px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .lista-produtos img {
+	display: block;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+  }
+  
+  .lista-produtos .info {
+	padding: 10px;
+  }
+  
+  .lista-produtos h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .lista-produtos .info span {
+	font-size: 18px;
+  }
+  
+  .lista-produtos .info p {
+	font-size: 18px;
+  }
+  
+  .lista-produtos p {
+	margin-bottom: 10px;
+  }
+  
+  .lista-produtos .acoes {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .lista-produtos .acoes button {
+	margin-right: 10px;
+  }
